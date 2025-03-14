@@ -13,7 +13,7 @@ Generation:
 
 ## How It works?
 
-[rag.png](./diagrams/rag.png)
+![rag.png](./diagrams/rag.png)
 
 ## Benefits:
 
