@@ -9,7 +9,7 @@ The process consist of retrieving data from an external store, such as a vector 
 
 Retrieval:  Fetch data from external knowledge base.
 Augmented:  Includes the data previously fetched into the query/prompt.
-Generation: 
+Generation: The AI Model process the query/prompt and the data from the external knowledge base in order to generate a response.
 
 ## How Does It work?
 
