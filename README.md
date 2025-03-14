@@ -11,7 +11,7 @@ Retrieval:  Fetch data from external knowledge base.
 Augmented:  Includes the data previously fetched into the query/prompt.
 Generation: 
 
-## How It works?
+## How Does It work?
 
 ![rag.png](./diagrams/rag.png)
 
