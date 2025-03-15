@@ -1,6 +1,6 @@
 # Retrieval-Augmented Generation (RAG)
 
-This repo is intended to teach about RAG technology
+The purpose of this repo is to guide people who are getting into the world of RAG technology and AI.
 
 ## What is RAG?
 
