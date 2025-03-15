@@ -43,16 +43,6 @@ Below there is a list of the most popular databases used for RAG:
 | Redis Vector | [https://redis.com/docs/stack/search/reference/vectors/](https://redis.com/docs/stack/search/reference/vectors/) | Redis extends its data structures to include vectors, allowing for fast vector similarity searches alongside traditional Redis operations. |
 
 
-
-## What technology is involved?
-
-## Vector Database
-
-[Langchain Vector Data](https://python.langchain.com/v0.1/docs/integrations/vectorstores/)
-
-
-
-
 ## References:
 
 - https://huggingface.co/docs/transformers/model_doc/rag
