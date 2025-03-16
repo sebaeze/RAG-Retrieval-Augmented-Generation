@@ -1,18 +1,19 @@
-# Retrieval-Augmented Generation (RAG)
+- [Purpose](#purpose)
+- [What is RAG?](#what-is-rag)
+- [Why to use RAG?](#why-to-use-rag)
+- [What RAG means?](#what-rag-means)
+- [How Does It work?](#how-does-it-work)
+  - [Data Ingestions](#data-ingestions)
+  - [Retrieval process](#retrieval-process)
+    - [Criteria for ranking data](#criteria-for-ranking-data)
+  - [Generation](#generation)
+- [Most popular Vector Databases](#most-popular-vector-databases)
+- [References:](#references)
+  
+
+## Purpose
 
 The purpose of this repo is to guide people who are getting into the world of RAG technology and AI.
-
-- [Retrieval-Augmented Generation (RAG)](#retrieval-augmented-generation-rag)
-  - [What is RAG?](#what-is-rag)
-  - [Why to use RAG?](#why-to-use-rag)
-  - [What RAG means?](#what-rag-means)
-  - [How Does It work?](#how-does-it-work)
-    - [Data Ingestions](#data-ingestions)
-    - [Retrieval process](#retrieval-process)
-      - [Criteria for ranking data](#criteria-for-ranking-data)
-    - [Generation](#generation)
-  - [Most popular Vector Databases](#most-popular-vector-databases)
-  - [References:](#references)
 
 ## What is RAG?
 
