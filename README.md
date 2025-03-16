@@ -72,7 +72,7 @@ The generation step consist of sending the contextual data created in the retrie
 ## Most popular Vector Databases
 
 Below there is a list of the most popular databases used for RAG:
-| Database Name |<div style="width:20%">URL</div> |Description |
+| Database Name |<div style="width:50px">URL</div> |Description |
 |---|---|---|
 | Pinecone | [https://www.pinecone.io/](https://www.pinecone.io/) | A fully managed vector database designed for high-performance similarity search, ideal for real-time applications. |
 | Weaviate | [https://weaviate.io/](https://weaviate.io/) | A cloud-native, real-time vector search engine with GraphQL and RESTful APIs, supporting hybrid search. |
