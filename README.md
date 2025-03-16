@@ -44,7 +44,14 @@ Generation: The AI Model process the query/prompt and the data from the external
 
 ### Data Ingestions
 
-The process of ingestion consist of separating the input data, which might be any text source in chunks and creating indexes. The chunks and the indexes are stored in a database, usually a Vector Database.
+The process of ingestion consist of:
+- Collect the data from the documents, websites, and so on.
+- Clean the information by remmoving unnecesary data.
+- Separate the data into chunks. 
+- Embedding: process the data by an embedding model, which converts It into vector representation of the data, capturing the semantic meaning.
+- The embedded data is loaded into a database, usually a Vector Database.
+- Index the embedding data.
+
 
 ### Retrieval process
 
@@ -72,7 +79,7 @@ The generation step consist of sending the contextual data created in the retrie
 ## Most popular Vector Databases
 
 Below there is a list of the most popular databases used for RAG:
-| Database Name | <div style="width:50px">URL</div> | <div style="width:150px">Description</div> |
+| Database Name | <div style="width: 50px">URL</div> | <div style="width: 150px">Description</div> |
 |---|---|---|
 | Pinecone | [https://www.pinecone.io/](https://www.pinecone.io/) | A fully managed vector database designed for high-performance similarity search, ideal for real-time applications. |
 | Weaviate | [https://weaviate.io/](https://weaviate.io/) | A cloud-native, real-time vector search engine with GraphQL and RESTful APIs, supporting hybrid search. |
