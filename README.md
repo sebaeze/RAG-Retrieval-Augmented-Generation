@@ -8,6 +8,7 @@
   - [How Does It work?](#how-does-it-work)
     - [Data Ingestions](#data-ingestions)
     - [Retrieval process](#retrieval-process)
+      - [Semantic Search](#semantic-search)
       - [Criteria for ranking data](#criteria-for-ranking-data)
     - [Generation](#generation)
   - [Most popular Vector Databases](#most-popular-vector-databases)
@@ -48,21 +49,38 @@ The process of ingestion consist of:
 - Collect the data from the documents, websites, and so on.
 - Clean the information by remmoving unnecesary data.
 - Separate the data into chunks. 
-- Embedding: process the data by an embedding model, which converts It into vector representation of the data, capturing the semantic meaning.
+- Embedding model transform the data into numerical vector, encoding the semantic means of the text.
 - The embedded data is loaded into a database, usually a Vector Database.
 - Index the embedding data.
-
 
 ### Retrieval process
 
 The retrieval phase is the process of searching and identifyig relevant information in the database. 
 
 The steps executed by the retrieval are:
-- Query formulation: Interpret and understand the input query from the user in order to use It as input for generating a query to a database and/or external knowledge database.
+- Semantic search: Interpret and understand the input query from the user in order to use It as input for generating a query to a database and/or external knowledge database.
 - Retrieval: The query is used for retrival of information.
 - Ranking: The information is ranked based on the query.
 - Selection: The top-ranked information is selected.
 - Context generation: Within the selected information, the process generate context using the most relevant data, which is included in the input to the AI Model.
+
+#### Semantic Search
+
+This approach is used for searching in vector dababase leveraging embeddings AI Models. The AI model transform text into numerical vector that representation before querying a vector database.
+
+Some of the most popular embedding models are:
+| **Model Name**                     | **Description**                                                                 | **Use Cases**                                                                 |
+|------------------------------------|---------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+| **text-embedding-ada-002**         | OpenAI's embedding model optimized for semantic search, RAG, and clustering.    | Document retrieval, question answering, similarity analysis.                  |
+| **BGE (BAAI General Embedding)**   | High-performance embeddings by BAAI, supporting multilingual and long-context. | Cross-lingual semantic search, enterprise RAG, dense retrieval systems.       |
+| **E5 (EmbEddings from bidirEctional Encoders)** | Microsoft's text embeddings trained with contrastive learning.               | Hybrid search, multilingual retrieval, knowledge-intensive NLP tasks.         |
+| **GTR (General T5 Retrieval)**     | Google's T5-based model fine-tuned for retrieval tasks.                        | Large-scale document retrieval, QA systems, academic research.                |
+| **Cohere Embed**                   | Cohere's dense retrieval model optimized for semantic accuracy.                | Enterprise search, contextual recommendation, multilingual RAG pipelines.     |
+| **all-mpnet-base-v2**              | Sentence Transformer model with MPNet architecture for sentence embeddings.   | Semantic similarity, clustering, legal/medical document analysis.            |
+| **multi-qa-mpnet-base-dot-v1**     | Sentence Transformer fine-tuned for multi-question answering retrieval.        | FAQ matching, customer support automation, e-commerce product search.        |
+| **Universal Sentence Encoder (USE)** | Google's model for sentence-level embeddings via Transformer or DAN encoder.  | Sentiment analysis, chatbot intent matching, content recommendation.          |
+| **INSTRUCTOR**                     | Instruction-tuned embeddings for task-aware semantic representations.          | Task-specific search (e.g., "find research papers"), dynamic RAG workflows.   |
+| **Jina Embeddings v2**             | Open-source model optimized for long document retrieval and RAG.               | Academic research, financial report analysis, patent search.                 |
   
 #### Criteria for ranking data
 
