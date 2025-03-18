@@ -66,7 +66,7 @@ The steps executed by the retrieval are:
 
 #### Semantic Search
 
-This approach is used for searching in vector dababase leveraging embeddings AI Models. The AI model transform text into numerical vector that representation before querying a vector database.
+This approach is used for searching in vector dababase leveraging embeddings AI Models. The AI model transform text into numerical vector representation before querying a vector database.
 
 Some of the most popular embedding models are:
 | **Model Name**                     | **Description**                                                                 | **Use Cases**                                                                 |
