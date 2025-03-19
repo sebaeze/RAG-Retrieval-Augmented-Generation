@@ -4,7 +4,10 @@
   - [Purpose](#purpose)
   - [What is RAG?](#what-is-rag)
   - [Why to use RAG?](#why-to-use-rag)
-  - [What RAG means?](#what-rag-means)
+  - [RAG vs Fine-Tuning](#rag-vs-fine-tuning)
+    - [RAG use cases](#rag-use-cases)
+    - [Fine-Tuning use cases](#fine-tuning-use-cases)
+  - [What It means?](#what-it-means)
   - [How Does It work?](#how-does-it-work)
     - [Data Ingestions](#data-ingestions)
     - [Retrieval process](#retrieval-process)
@@ -33,7 +36,21 @@ RAG technology in intended to solve limitations of usin AI Models (Small and Lar
 - Domain-Specific customization: RAG technology is usefull for retrieving data about specific domains without need to re-train a model.
 - Combines context data with up-to-date information.
 
-## What RAG means?
+## RAG vs Fine-Tuning
+
+Both techniques are popular for adapting AI models to specific needs. The key difference lies in how they obtain data. While fine-tuning relies on static training using parameters, Retrieval-Augmented Generation (RAG) can access dynamic data using real-time methods.
+
+### RAG use cases
+- Customer Support Chatbots: Fetching and generating answers from a dynamic knowledge base of FAQs, product manuals, or troubleshooting guides.
+- Open-Domain Question Answering: Providing answers to questions by retrieving relevant documents from a large corpus, such as research papers or news articles.
+- Personalized Learning Assistants: Helping students by retrieving contextually relevant educational materials from a database in real time.
+
+### Fine-Tuning use cases
+- Legal Document Analysis: Training a language model on legal texts to specialize in summarizing, classifying, or extracting clauses from contracts or legal documents.
+- Sentiment Analysis in Social Media: Fine-tuning a model on labeled social media posts to classify sentiments (positive, negative, neutral) for specific industries or campaigns.
+- Medical Diagnosis Support: Training on a dataset of medical records or diagnoses to assist healthcare professionals in identifying conditions or generating patient-specific reports.
+
+## What It means?
 
 Retrieval:  Fetch data from external knowledge base.
 Augmented:  Includes the data previously fetched into the query/prompt.
