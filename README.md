@@ -113,6 +113,7 @@ The generation step consist of sending the contextual data created in the retrie
 
 ## Most popular Vector Databases
 
+
 Below there is a list of the most popular databases used for RAG:
 | Database Name | <div style="width: 50px">URL</div> | <div style="width: 150px">Description</div> |
 |---|---|---|
