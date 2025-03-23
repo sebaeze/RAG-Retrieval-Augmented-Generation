@@ -81,11 +81,24 @@ The steps executed by the retrieval are:
 - Selection: The top-ranked information is selected.
 - Context generation: Within the selected information, the process generate context using the most relevant data, which is included in the input to the AI Model.
 
-#### Semantic Search
+### Vector embeddings
 
-This approach is used for searching in vector dababase leveraging embeddings AI Models. The AI model transform text into numerical vector representation before querying a vector database.
+Vector embeddings are numerical representations of data objects—such as words, phrases, and sentences—expressed as vectors that encapsulate their semantic meaning. These embeddings are created using AI models designed for this purpose. They play a critical role in RAG technology, enabling efficient and precise retrieval of relevant information.
 
-Some of the most popular embedding models are:
+Example:
+
+Original Text:
+"The sky is blue."
+
+Vector Embedding:
+"The"  → [0.12, 0.45, -0.23, 0.67, 0.05]
+"sky"  → [0.78, 0.11, -0.44, 0.56, 0.33]
+"is"   → [0.34, -0.12, 0.89, 0.01, 0.41]
+"blue" → [0.90, 0.22, -0.55, 0.33, 0.77]
+
+
+### Popular Embedding Model
+
 | **Model Name**                     | **Description**                                                                 | **Use Cases**                                                                 |
 |------------------------------------|---------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
 | **text-embedding-ada-002**         | OpenAI's embedding model optimized for semantic search, RAG, and clustering.    | Document retrieval, question answering, similarity analysis.                  |
@@ -98,6 +111,11 @@ Some of the most popular embedding models are:
 | **Universal Sentence Encoder (USE)** | Google's model for sentence-level embeddings via Transformer or DAN encoder.  | Sentiment analysis, chatbot intent matching, content recommendation.          |
 | **INSTRUCTOR**                     | Instruction-tuned embeddings for task-aware semantic representations.          | Task-specific search (e.g., "find research papers"), dynamic RAG workflows.   |
 | **Jina Embeddings v2**             | Open-source model optimized for long document retrieval and RAG.               | Academic research, financial report analysis, patent search.                 |
+
+#### Semantic Search
+
+This approach is used for searching in vector dababase leveraging embeddings AI Models. The AI model transform text into numerical vector representation before querying a vector database.
+
   
 #### Criteria for ranking data
 
@@ -111,7 +129,7 @@ Some of the most popular embedding models are:
 
 The generation step consist of sending the contextual data created in the retrieval process in combination with the user's input message to the AI Model, which generates the final response.
 
-## Most popular Vector Databases
+### Most popular Vector Databases
 
 
 Below there is a list of the most popular databases used for RAG:
